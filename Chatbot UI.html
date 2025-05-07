@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RaiseHigh Tech AI Chatbot</title>
+</head>
+<body>
+  <h2>RaiseHigh Tech Chatbot</h2>
+  <div id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Type your message...">
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    async function sendMessage() {
+      const userInput = document.getElementById("userInput").value;
+      if (!userInput) return;
+
+      addMessage("You", userInput);
+
+      const res = await fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userInput })
+      });
+
+      const data = await res.json();
+      addMessage("RaiseHigh", data.response);
+
+      document.getElementById("userInput").value = "";
+    }
+
+    function addMessage(sender, text) {
+      const div = document.createElement("div");
+      div.textContent = `${sender}: ${text}`;
+      document.getElementById("chatBox").appendChild(div);
+    }
+
+    // 🔥 Show welcome message when the page loads
+    window.onload = async () => {
+      const res = await fetch("http://127.0.0.1:5000/start");
+      const data = await res.json();
+      addMessage("RaiseHigh", data.response);
+    };
+  </script>
+</body>
+</html>
