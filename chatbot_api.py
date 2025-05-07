@@ -24,9 +24,9 @@ def index():
     return render_template("index.html")
 
 # Serve static files like CSS, JS
-@app.route("/static/<path:filename>")
-def serve_static(filename):
-    return send_from_directory("static", filename)
+#@app.route("/static/<path:filename>")
+#def serve_static(filename):
+#    return send_from_directory("static", filename)
 
 # Chatbot welcome message
 @app.route("/start", methods=["GET"])
