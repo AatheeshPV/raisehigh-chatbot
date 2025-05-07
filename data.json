@@ -1,0 +1,50 @@
+[
+    {
+      "question": "Hello",
+      "answer": "Hi there! Welcome to RaiseHigh Tech. How can I assist you today?"
+    },
+    {
+      "question": "What services do you offer?",
+      "answer": "We provide web development, mobile app development, AI/ML solutions, UI/UX design, and cloud services."
+    },
+    {
+      "question": "Do you build mobile apps?",
+      "answer": "Yes! We develop high-performance Android, iOS, and cross-platform mobile applications."
+    },
+    {
+      "question": "How much do your services cost?",
+      "answer": "Our pricing depends on your project requirements. Contact us for a free consultation and estimate."
+    },
+    {
+      "question": "How long does a project usually take?",
+      "answer": "Timelines vary based on complexity, but typical projects take 2 to 8 weeks from planning to delivery."
+    },
+    {
+      "question": "Can you create an e-commerce website?",
+      "answer": "Absolutely! We build scalable and secure e-commerce platforms with payment gateway integration."
+    },
+    {
+      "question": "What technologies do you use?",
+      "answer": "We use Python, JavaScript, React, Flutter, Django, Node.js, TensorFlow, and more depending on project needs."
+    },
+    {
+      "question": "Do you offer AI solutions?",
+      "answer": "Yes, we provide AI-powered chatbots, recommendation systems, image recognition, and more."
+    },
+    {
+      "question": "Where is your company located?",
+      "answer": "We're a remote-first startup headquartered in India, serving clients worldwide."
+    },
+    {
+      "question": "Do you provide post-launch support?",
+      "answer": "Yes, we offer full maintenance and support packages post-deployment to ensure everything runs smoothly."
+    },
+    {
+      "question": "Can you integrate third-party APIs?",
+      "answer": "Definitely! We can integrate a wide range of APIs including payment gateways, CRMs, and social media tools."
+    },
+    {
+      "question": "How can I contact your team?",
+      "answer": "You can reach us via email at contact@raisehigh.tech or through the chat form on our website."
+    }
+  ]  
